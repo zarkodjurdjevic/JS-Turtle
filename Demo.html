@@ -3,27 +3,30 @@
 <head>
 
 </head>
-<body>
-  <canvas style="border: 1px solid black" id="mycanvas" height ="800" width = "1200">
+<body style="background-color: blue;">
+  <canvas style="border: 60px solid rgb(223, 39, 39)" id="mycanvas" height ="800" width = "1200">
+  
 </body>
 <script src="turtle.js"></script>
 <script>
   var p = new Turtle(document.getElementById("mycanvas"));
-  p.moveto(600, 350);
+  p.moveto(900, 425);
   p.penDown = true;
 
 function Square(size){
-  for(var i = 0; i < 4; i++){
+  for(var i = 0; i < 700; i++){
     p.forward(size);
-    p.right(90);
+    p.right(30);
   }
 }
 
-for(var i = 0; i < 10; i++){
-  Square(200);
-  p.forward(5);
-  p.left(36);
+for(var i = 0; i < 900; i++){
+  Square(130);
+  p.forward(10);
+  p.left(40);
+  p.right(5);
 }
+
 	
 
 </script>
